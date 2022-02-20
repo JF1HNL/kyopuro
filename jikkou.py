@@ -1,6 +1,6 @@
 import sys
 
-if len(sys.argv) == 2:
-  sys.stdin = open(sys.argv[1])
+if len(sys.argv) == 3:
+  sys.stdin = open(sys.argv[2])
 
-exec(open("index.py").read())
+exec(open(sys.argv[1]).read())
