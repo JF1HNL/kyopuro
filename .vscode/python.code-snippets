@@ -14,5 +14,12 @@
   "nijigen" : {
     "prefix": "[list(map(int, input().split())) for _ in range(n)]",
     "body": "[list(map(int, input().split())) for _ in range(${1:n})]"
+  },
+  "saiki" : {
+    "prefix": "saiki",
+    "body": [
+      "import sys",
+      "sys.setrecursionlimit(10**6)"
+    ]
   }
 }
