@@ -21,5 +21,9 @@
       "import sys",
       "sys.setrecursionlimit(10**6)"
     ]
+  },
+  "symbol" : {
+    "prefix": ["SYMBOL", "symbol"],
+    "body": "SYMBOL = \"abcdefghijklmnopqrstuvwxyz\""
   }
 }
