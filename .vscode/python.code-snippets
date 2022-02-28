@@ -1,4 +1,13 @@
 {
+  "init" : {
+    "prefix": "init",
+    "body": [
+      "def main():",
+      "\t${1:n = int(input())}",
+      "",
+      "main()"
+    ]
+  },
   "listmap" : {
     "prefix": "listmap",
     "body": "list(map(int, input().split()))"
@@ -25,5 +34,45 @@
   "symbol" : {
     "prefix": ["SYMBOL", "symbol"],
     "body": "SYMBOL = \"abcdefghijklmnopqrstuvwxyz\""
+  },
+  "inf早い" : {
+    "prefix": ["inf", "INF"],
+    "body": "INF = 10 ** 18",
+    "description": "早い"
+  },
+  "inf遅い" : {
+    "prefix": ["inf", "INF"],
+    "body": "INF = float(\"inf\")",
+    "description": "遅い"
+  },
+  "max2個" : {
+    "prefix": "max",
+    "body": "${1:hoge} if ${1:hoge} >= ${2:huga} else ${2:huga}"
+  },
+  "min2個" : {
+    "prefix": "min",
+    "body": "${1:hoge} if ${1:hoge} <= ${2:huga} else ${2:huga}"
+  },
+  "二分探索" : {
+    "prefix": "nibun",
+    "body": [
+      "# https://qiita.com/T_Wakasugi/items/c979e977f56531942de4",
+      "from bisect import bisect_left, bisect_right, insort"
+    ]
+  },
+  "優先度付キュー" : {
+    "prefix": "yuusendo",
+    "body": [
+      "# https://qiita.com/ell/items/fe52a9eb9499b7060ed6",
+      "from heapq import heapify, heappop, heappush"
+    ]
+  },
+  "配列が早くなるやつインポート" : {
+    "prefix": "array_import",
+    "body": "from array import array"
+  },
+  "配列が早くなるやつ関数" : {
+    "prefix": "array_func",
+    "body": "array(\"i\", ${1:[0, 1, 2]})"
   }
 }
