@@ -74,5 +74,13 @@
   "配列が早くなるやつ関数" : {
     "prefix": "array_func",
     "body": "array(\"i\", ${1:[0, 1, 2]})"
+  },
+  "キュー" : {
+    "prefix": "deque",
+    "body": [
+      "# リストの両端の削除が早くなる。先頭に追加できる",
+      "# https://qiita.com/ryosuke0825/items/bbc5c0673e6c6c958d66",
+      "from collections import deque"
+    ]
   }
 }
