@@ -90,5 +90,13 @@
   "累積和": {
     "prefix": "ruiseki",
     "body": "from itertools import accumulate"
+  },
+  "コンビネーション": {
+    "prefix": "combination",
+    "body": [
+      "from math import factorial",
+      "def nCk(n, k):",
+      "\treturn factorial(n) // (factorial(k) * factorial(n - k))"
+    ]
   }
 }
