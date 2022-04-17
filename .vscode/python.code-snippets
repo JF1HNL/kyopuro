@@ -102,5 +102,9 @@
   "defaultdict": {
     "prefix": "defaultdict",
     "body": "from collections import defaultdict"
+  },
+  "fraction" : {
+    "prefix": "fraction",
+    "body": "from fractions import Fraction"
   }
 }
