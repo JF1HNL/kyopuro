@@ -98,5 +98,9 @@
       "def nCk(n, k):",
       "\treturn factorial(n) // (factorial(k) * factorial(n - k))"
     ]
+  },
+  "defaultdict": {
+    "prefix": "defaultdict",
+    "body": "from collections import defaultdict"
   }
 }
