@@ -106,5 +106,13 @@
   "fraction" : {
     "prefix": "fraction",
     "body": "from fractions import Fraction"
+  },
+  "debug" : {
+    "prefix": "def debug()",
+    "body": [
+      "def debug(*e):",
+      "\tif \"localdebug\" in globals():",
+      "\t\tprint(\"debug\", *e)"
+    ]
   }
 }
