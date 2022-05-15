@@ -1,9 +1,13 @@
-from fileinput import filename
 import glob
 import sys
+import os
 
 input_files = glob.glob("./input/*")
 output_files = glob.glob("./output/*")
+solve_files = glob.glob("./solve/*")
+
+for f in solve_files:
+  os.remove(f)
 
 if len(input_files) != len(output_files):
   print("length not equal")
@@ -21,7 +25,7 @@ for inputfile in input_files:
     continue
 
   sys.stdin = open(inputfile)
-  sys.stdout = open(solvefilename, 'w')
+  sys.stdout = open(solvefilename, 'a+')
 
   exec(open("./main.py").read())
 
