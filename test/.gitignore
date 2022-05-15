@@ -1,0 +1,7 @@
+input/*
+output/*
+solve/*
+!input/.gitkeep
+!output/.gitkeep
+!solve/.gitkeep
+main.py
