@@ -2,6 +2,10 @@ import glob
 import sys
 import os
 
+GREEN = '\033[32m'
+YELLOW = '\033[33m'
+END = '\033[0m'
+
 input_files = glob.glob("./input/*")
 output_files = glob.glob("./output/*")
 solve_files = glob.glob("./solve/*")
@@ -32,6 +36,6 @@ for inputfile in input_files:
   sys.stdout = sys.__stdout__
 
   if open(solvefilename).read() == open(outputfilename).read():
-    print(f"{filename} : AC")
+    print(GREEN + f"{filename} : AC" + END)
   else:
-    print(f"{filename} : WA")
+    print(YELLOW +  f"{filename} : WA" + END)
