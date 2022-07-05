@@ -1,0 +1,46 @@
+{
+  "SELECT": {
+    "prefix": "SELECT",
+    "body": "SELECT\n\t"
+  },
+  "FROM": {
+    "prefix": "FROM",
+    "body": "FROM\n\t"
+  },
+  "WHERE": {
+    "prefix": "WHERE",
+    "body": "WHERE\n\t"
+  },
+  "GROUP BY": {
+    "prefix": "GROUP BY",
+    "body": "GROUP BY\n\t"
+  },
+  "ORDER BY": {
+    "prefix": "ORDER BY",
+    "body": "ORDER BY\n\t"
+  },
+  "LEFT JOIN": {
+    "prefix": "LEFT JOIN",
+    "body": "LEFT JOIN"
+  },
+  "ON": {
+    "prefix": "ON",
+    "body": "ON"
+  },
+  "AS": {
+    "prefix": "AS",
+    "body": "AS"
+  },
+  "REAL": {
+    "prefix": "REAL",
+    "body": "REAL"
+  },
+  "CAST": {
+    "prefix": "CAST(num AS REAL)",
+    "body": "CAST("
+  },
+  "ROUND": {
+    "prefix": "ROUND(num, 2)",
+    "body": "ROUND("
+  },
+}
