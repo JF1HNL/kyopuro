@@ -5,4 +5,4 @@ if len(sys.argv) == 3:
 
 localdebug = True
 
-exec(open(sys.argv[1]).read())
+exec(open(sys.argv[1], encoding="utf-8").read())
