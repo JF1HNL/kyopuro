@@ -115,7 +115,7 @@
       "\t\tprint(\"debug\", *e)"
     ]
   },
-  "unionfind" : {
+  "number UnionFind" : {
     "prefix": "unionfind",
     "description": "数字しか使えない",
     "body": [
