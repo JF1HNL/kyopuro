@@ -345,5 +345,35 @@
       "\tdef all_group_members(self):#根とその要素",
       "\t\treturn {r: self.members_set[r] for r in self.roots_set}"
     ]
+  }, 
+  "soinsu":{
+    "prefix": "soinsu",
+    "description": "素因数分解",
+    "body": [
+      "# https://qiita.com/snow67675476/items/e87ddb9285e27ea555f8",
+      "\"\"\"nを素因数分解\"\"\"",
+      "\"\"\"2以上の整数n => [[素因数, 指数], ...]の2次元リスト\"\"\"",
+      "", 
+      "def factorization(n):",
+      "\tarr = []",
+      "\ttemp = n",
+      "\tfor i in range(2, int(-(-n**0.5//1))+1):",
+      "\t\tif temp%i==0:",
+      "\t\t\tcnt=0",
+      "\t\t\twhile temp%i==0:",
+      "\t\t\t\tcnt+=1",
+      "\t\t\t\ttemp //= i",
+      "\t\t\tarr.append([i, cnt])",
+      "",
+      "\tif temp!=1:",
+      "\t\tarr.append([temp, 1])",
+      "",
+      "\tif arr==[]:",
+      "\t\tarr.append([n, 1])",
+      "",
+      "\treturn arr",
+      "## [[2, 3], [3, 1]] ",
+      "##  24 = 2^3 * 3^1"
+    ]
   }
 }
