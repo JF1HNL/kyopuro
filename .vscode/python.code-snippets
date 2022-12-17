@@ -375,5 +375,20 @@
       "## [[2, 3], [3, 1]] ",
       "##  24 = 2^3 * 3^1"
     ]
+  }, 
+  "query" : {
+    "prefix": "query",
+    "body": [
+      "for _ in [0] * q:",
+      "\tquery = list(map(int, input().split()))",
+      "\tif query[0] == 1:",
+      "\t\t_, x, y = query",
+      "",
+      "\telif query[0] == 2:",
+      "\t\t_, x, y = query",
+      "",
+      "\telif query[0] == 3:",
+      "\t\t_, x, y = query"
+    ]
   }
 }
