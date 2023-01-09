@@ -27,6 +27,7 @@
   "saiki" : {
     "prefix": "saiki",
     "body": [
+      "# 提出は必ずPythonで!",
       "import sys",
       "sys.setrecursionlimit(10**6)"
     ]
@@ -100,8 +101,12 @@
     ]
   },
   "defaultdict": {
-    "prefix": "defaultdict",
+    "prefix": "import defaultdict",
     "body": "from collections import defaultdict"
+  },
+  "defaultdict_use": {
+    "prefix": "defaultdict()",
+    "body": "defaultdict(lambda: ${1: []})"
   },
   "fraction" : {
     "prefix": "fraction",
