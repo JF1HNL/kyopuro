@@ -24,6 +24,14 @@
     "prefix": "[list(map(int, input().split())) for _ in [0] * n]",
     "body": "[list(map(int, input().split())) for _ in [0] * ${1:n}]"
   },
+  "nijigenchr" : {
+    "prefix": "[input() for _ in [0] * n]",
+    "body": "[input() for _ in [0] * ${1:n}]"
+  },
+  "printkaigyo" : {
+    "prefix": "print(*list, sep = \"\\n\")",
+    "body": "print(*${1:list}, sep = \"\\n\")"
+  },
   "saiki" : {
     "prefix": "saiki",
     "body": [
